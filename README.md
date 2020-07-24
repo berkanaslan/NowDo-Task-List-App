@@ -1,6 +1,8 @@
 # to_do_list_app
 
 A simple to do list app.
+Screenshots and packages: https://berkanaslan.com/portfolio/nowdo-basit-gorevler-listesi-flutter/
+
 
 ## Getting Started
 
