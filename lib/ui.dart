@@ -53,6 +53,7 @@ class _TaskTemplateState extends State<TaskTemplate> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
+      appBar: AppBar(title: Text("NowDo"),),
       body: RefreshIndicator(
         key: refreshKey,
         onRefresh: refreshTaskList,
@@ -74,7 +75,7 @@ class _TaskTemplateState extends State<TaskTemplate> {
     return SliverStickyHeader(
       sticky: false,
       header: Container(
-        height: 150.0,
+        height: 100.0,
         color: Colors.white,
         padding: EdgeInsets.only(left: 16, right: 16, bottom: 16),
         alignment: Alignment.centerLeft,
@@ -94,7 +95,7 @@ class _TaskTemplateState extends State<TaskTemplate> {
 
   Text headerTitle() {
     return Text(
-      "NowDo",
+      "Görevler seni bekliyor!",
       style: TextStyle(
           fontSize: 32,
           fontWeight: FontWeight.bold,
