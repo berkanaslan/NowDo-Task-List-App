@@ -27,6 +27,7 @@ class _TaskTemplateState extends State<TaskTemplate> {
   bool refreshList;
   var refreshKey = GlobalKey<RefreshIndicatorState>();
   var scaffoldKey = GlobalKey<ScaffoldState>();
+  List<Color> checkboxColors;
 
   Future<Null> refreshTaskList() async {
     refreshKey.currentState?.show(atTop: true);
@@ -40,9 +41,10 @@ class _TaskTemplateState extends State<TaskTemplate> {
 
   @override
   void initState() {
+    super.initState();
     databaseHelper = DatabaseHelper();
     _future = getList();
-    super.initState();
+    checkboxColors = colorList();
   }
 
   Future<List<Task>> getList() async {
@@ -53,7 +55,9 @@ class _TaskTemplateState extends State<TaskTemplate> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      appBar: AppBar(title: Text("NowDo"),),
+      appBar: AppBar(
+        title: Text("NowDo"),
+      ),
       body: RefreshIndicator(
         key: refreshKey,
         onRefresh: refreshTaskList,
@@ -97,16 +101,17 @@ class _TaskTemplateState extends State<TaskTemplate> {
     return Text(
       "Görevler seni bekliyor!",
       style: TextStyle(
-          fontSize: 32,
-          fontWeight: FontWeight.bold,
-          color: Color.fromRGBO(62, 67, 105, 1)),
+        fontSize: 32,
+        fontWeight: FontWeight.bold,
+        color: Color(0xff3E4369),
+      ),
     );
   }
 
   RichText headerDescription() {
     return RichText(
       text: TextSpan(
-        style: TextStyle(color: Color.fromRGBO(143, 143, 169, 1), fontSize: 16.00),
+        style: TextStyle(color: Color(0xff8f8fa9), fontSize: 16.00),
         children: <TextSpan>[
           TextSpan(text: 'Tamamlanması gereken'),
           TextSpan(
@@ -271,7 +276,7 @@ class _TaskTemplateState extends State<TaskTemplate> {
     );
   }
 
-  Row buildCheckbox(List<Task> item, int index) {
+  List<Color> colorList() {
     List<Color> colors = [
       Color(0xff423E37),
       Color(0xffE3B23C),
@@ -289,7 +294,10 @@ class _TaskTemplateState extends State<TaskTemplate> {
       Color(0xffC5D86D),
       Color(0xff1B998B),
     ];
+    return colors;
+  }
 
+  Row buildCheckbox(List<Task> item, int index) {
     var rnd = new Random();
     int i = rnd.nextInt(15);
 
@@ -298,7 +306,8 @@ class _TaskTemplateState extends State<TaskTemplate> {
       children: <Widget>[
         RoundCheckBox(
           size: 20,
-          borderColor: item[index].taskIsDone == 0 ? colors[i] : Color(0xff5c2fd4),
+          borderColor:
+              item[index].taskIsDone == 0 ? checkboxColors[i] : Color(0xff5c2fd4),
           checkedColor: Color(0xff5c2fd4),
           onTap: (value) {
             setState(() {
