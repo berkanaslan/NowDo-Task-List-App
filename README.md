@@ -1,8 +1,11 @@
 # to_do_list_app
+Packages: https://berkanaslan.com/portfolio/nowdo-basit-gorevler-listesi-flutter/
 
-A simple to do list app.
-Screenshots and packages: https://berkanaslan.com/portfolio/nowdo-basit-gorevler-listesi-flutter/
 
+
+Home             |  New Note
+:-------------------------:|:-------------------------:
+![Dashboard](https://berkanaslan.com/wp-content/uploads/2020/08/1-1024x624.png)  |  ![Dashboard](https://berkanaslan.com/wp-content/uploads/2020/08/2-1024x628.png)
 
 ## Getting Started
 
