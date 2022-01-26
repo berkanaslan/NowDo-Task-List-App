@@ -3,8 +3,10 @@ Packages: https://berkanaslan.com/portfolio/nowdo-basit-gorevler-listesi-flutter
 
 
 
-![Dashboard](https://berkanaslan.com/wp-content/uploads/2020/08/1-1024x624.png)
-![Dashboard](https://berkanaslan.com/wp-content/uploads/2020/08/2-1024x628.png)
+![Dashboard](https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331523.png)
+![Dashboard](https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331531.png)
+![Dashboard](https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331575.png)
+![Dashboard](https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331590.png)
 
 ## Getting Started
 
