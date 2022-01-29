@@ -1,12 +1,8 @@
-# to_do_list_app
-Packages: https://berkanaslan.com/portfolio/nowdo-basit-gorevler-listesi-flutter/
+NowDo, TO-DO List Application
 
-
-
-![Dashboard](https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331523.png)
-![Dashboard](https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331531.png)
-![Dashboard](https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331575.png)
-![Dashboard](https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331590.png)
+|||||
+|:---|:---|:---|:---|
+| <img width="256" alt="" src="https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331523.png"> | <img width="256" alt="" src="https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331531.png"> | <img width="256" alt="" src="https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331575.png"> | <img width="256" alt="3" src="https://github.com/berkanaslan/NowDo-Task-List-App/blob/master/Screenshots/Screenshot_1594331590.png">
 
 ## Getting Started
 
